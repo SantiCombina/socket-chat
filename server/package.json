@@ -1,0 +1,32 @@
+{
+    "name": "socket-chat-server",
+    "version": "1.0.0",
+    "description": "aplication to chat with others persons",
+    "main": "index.js",
+    "type": "module",
+    "workspaces": [
+      "app",
+      "server"
+    ],
+    "scripts": {
+      "dev": "cd app && vite",
+      "server": "cd server && nodemon index.js --ignore app",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+      "chat",
+      "socket"
+    ],
+    "author": "Santiago Combina",
+    "license": "ISC",
+    "devDependencies": {
+      "nodemon": "^3.1.0"
+    },
+    "dependencies": {
+      "cors": "^2.8.5",
+      "express": "^4.19.2",
+      "morgan": "^1.10.0",
+      "react-scripts": "^5.0.1"
+    }
+  }
+  

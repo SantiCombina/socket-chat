@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Scrollbar CSS ===== */
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent; /* Establece el fondo transparente */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(50, 58, 63, 0.5); /* Agrega transparencia al color de la barra */
+  border-radius: 0px;
+  border: 0px none #ffffff;
+}
