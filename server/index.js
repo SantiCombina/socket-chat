@@ -12,7 +12,7 @@ const io = new Server(server)
 app.use(morgan("dev"))
 app.use(express.static(resolve("app/dist")))
 
-app.get("/room", (req, res) => {
+app.get("/chat", (req, res) => {
     res.sendFile("app/dist/index.html")
 })
 
@@ -25,8 +25,6 @@ io.on("connection", socket => {
             messages[room] = [];
         }
         socket.join(room)
-
-        console.log(messages)
         io.to(room).emit("messagesHistory", messages[room]);
     });
 

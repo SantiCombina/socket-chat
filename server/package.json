@@ -1,32 +1,29 @@
 {
-    "name": "socket-chat-server",
+    "name": "chat-socket",
     "version": "1.0.0",
-    "description": "aplication to chat with others persons",
+    "description": "",
     "main": "index.js",
     "type": "module",
     "workspaces": [
-      "app",
-      "server"
+      "server",
+      "app"
     ],
     "scripts": {
       "dev": "cd app && vite",
       "server": "cd server && nodemon index.js --ignore app",
-      "test": "echo \"Error: no test specified\" && exit 1"
+      "test": "cd app && react-scripts test"
     },
-    "keywords": [
-      "chat",
-      "socket"
-    ],
+    "keywords": [],
     "author": "Santiago Combina",
     "license": "ISC",
-    "devDependencies": {
-      "nodemon": "^3.1.0"
-    },
     "dependencies": {
       "cors": "^2.8.5",
-      "express": "^4.19.2",
+      "express": "^4.18.2",
       "morgan": "^1.10.0",
-      "react-scripts": "^5.0.1"
+      "react-scripts": "^5.0.1",
+      "socket.io": "^4.7.2"
+    },
+    "devDependencies": {
+      "nodemon": "^3.0.2"
     }
   }
-  
