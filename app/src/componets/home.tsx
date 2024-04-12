@@ -22,8 +22,8 @@ export function Home() {
     };
 
     return (
-        <div className="h-screen w-screen bg-[#0C1317] text-[#e9edef]">
-            <div className="container flex flex-col h-screen p-4">
+        <div className="min-h-screen w-screen bg-[#0C1317] text-[#e9edef]">
+            <div className="container flex flex-col h-screen notebook:p-4">
                 <form
                     className="bg-[#121B20] h-full items-center flex flex-col justify-center gap-3"
                     onSubmit={methods.handleSubmit(handleSubmit)}
@@ -64,7 +64,7 @@ export function Home() {
                             <h2 className="text-sm text-red-400">{methods.formState.errors.room?.message}</h2>
                         </div>
                     </label>
-                    <button className="px-3 py-1 border border-red-500 rounded-lg">Join</button>
+                    <button className="px-5 border rounded-lg border-white/20 bg-emerald-900">Join</button>
                 </form>
             </div>
         </div>

@@ -83,8 +83,8 @@ export function Room() {
   }, []); //eslint-disable-line
 
     return (
-        <div className="h-screen w-screen bg-[#0C1317] text-[#e9edef]">
-            <div className="container flex flex-col h-screen p-4">
+        <div className="min-h-screen w-screen bg-[#0C1317] text-[#e9edef]">
+            <div className="container flex flex-col h-screen notebook:p-4">
                 <div className="bg-[#202C33] p-3 flex gap-2">
                     <span className="font-bold">{queryParams.room}</span>
                 </div>
